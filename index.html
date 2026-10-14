@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kollamaram Vineetha | QA Automation Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF2F0;--surface:#FFFFFF;--ink:#14231F;--muted:#4D5F59;--line:#C9D4CF;
+  --pass:#17724B;--fail:#B93A26;--code-bg:#14231F;--code-ink:#DCEBE4;--code-pass:#6EE0A8;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1A17;--surface:#16251F;--ink:#E6F0EB;--muted:#9DB2A9;--line:#2B3F37;--pass:#6EE0A8;--fail:#FF8F7A;--code-bg:#0A120F;--code-ink:#DCEBE4;--code-pass:#6EE0A8}
+}
+:root[data-theme="dark"]{--bg:#0F1A17;--surface:#16251F;--ink:#E6F0EB;--muted:#9DB2A9;--line:#2B3F37;--pass:#6EE0A8;--fail:#FF8F7A;--code-bg:#0A120F;--code-ink:#DCEBE4;--code-pass:#6EE0A8}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Public Sans",system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--pass);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--pass);outline-offset:3px}
+nav{padding:20px 0;display:flex;gap:22px;flex-wrap:wrap;font-weight:500;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:44px 0 56px;display:grid;gap:34px}
+.hero h1{font-size:clamp(44px,9vw,84px);font-weight:700;letter-spacing:-.02em}
+.hero .role{font-size:clamp(19px,3vw,24px);color:var(--muted);max-width:34em;margin:14px 0 0}
+.run{background:var(--code-bg);color:var(--code-ink);border-radius:6px;padding:20px 22px;font:500 14px/1.9 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-x:auto;white-space:pre}
+.run .ok{color:var(--code-pass)}
+.run .dim{opacity:.6}
+section{padding:46px 0;border-top:1px solid var(--line)}
+section>h2{font-size:clamp(28px,5vw,38px);margin-bottom:24px}
+.lead{max-width:36em;margin:0}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:26px;margin-bottom:20px}
+.case h3{font-size:24px;margin-bottom:6px}
+.case .tools{color:var(--muted);font-size:15px;margin:0 0 18px}
+dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:12px 20px}
+dt{font-weight:600;color:var(--muted);font-size:15px}
+dd{margin:0}
+dd.result{font-weight:600}
+dd.result::before{content:"Pass. ";color:var(--pass)}
+ul.plain{margin:0;padding-left:20px;max-width:40em}
+ul.plain li{margin-bottom:8px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.skills h3{font-size:18px;margin-bottom:6px}
+.skills p{margin:0;color:var(--muted);font-size:16px}
+.edu p{margin:0 0 10px}
+.contact a{display:inline-block;margin:0 22px 8px 0;font-weight:600}
+footer{padding:30px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:600px){dl{grid-template-columns:1fr;gap:2px 0}dt{margin-top:10px}.case{padding:20px}body{font-size:16px}}
+@media (prefers-reduced-motion:no-preference){.run .line{opacity:0;animation:show .35s forwards}.run .line:nth-child(2){animation-delay:.5s}.run .line:nth-child(3){animation-delay:.9s}.run .line:nth-child(4){animation-delay:1.3s}.run .line:nth-child(5){animation-delay:1.7s}@keyframes show{to{opacity:1}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#work">Work</a><a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#learning">Learning</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Kollamaram Vineetha</h1>
+<p class="role">QA Automation Engineer with 2+ years of experience testing AI assistants and connected-device apps. I build Python automation and validate how AI systems behave, including tool calls and multi-step agent workflows.</p>
+</div>
+<div class="run" role="img" aria-label="Sample test run output: tool selection, parameter extraction and multi-step reasoning all pass"><span class="line dim">$ pytest agent_behavior/</span>
+<span class="line">tool_selection ........... <span class="ok">PASS</span></span>
+<span class="line">parameter_extraction ..... <span class="ok">PASS</span></span>
+<span class="line">multi_step_reasoning ..... <span class="ok">PASS</span></span>
+<span class="line dim">stability: above 90%</span></div>
+</header>
+
+<section id="work">
+<h2>Selected work</h2>
+<p class="lead" style="margin-bottom:24px">Three projects from my current role. Employer and product details are left out on purpose.</p>
+
+<article class="case">
+<h3>Testing an AI assistant</h3>
+<p class="tools">Python, Inception framework, prompt engineering</p>
+<dl>
+<dt>Problem</dt><dd>An AI assistant had to give correct, consistent answers across media commands, web questions and smart-device actions, in both UI and API layers.</dd>
+<dt>My role</dt><dd>Owned test design, test data and automation for response validation, and managed defects through the full test cycle.</dd>
+<dt>Approach</dt><dd>Wrote test scenarios for each query type and automated response checks in Python. Evaluated tool and function-call behavior: whether the right tool was picked, whether parameters were extracted correctly, and whether multi-step reasoning held up. Refined prompts to close gaps, then ran root cause analysis, debugging and retesting. I fixed several defects directly.</dd>
+<dt>Result</dt><dd class="result">Raised application stability to above 90% by making tests more reliable and cutting flaky cases.</dd>
+</dl>
+</article>
+
+<article class="case">
+<h3>API testing for connected smart-home devices</h3>
+<p class="tools">Kotlin, Swift, EarlGrey, Bazel</p>
+<dl>
+<dt>Problem</dt><dd>Many device types integrated with a smart-home app, and their APIs needed checking on both Android and iOS.</dd>
+<dt>My role</dt><dd>Wrote and ran API tests, and traced failures to their source.</dd>
+<dt>Approach</dt><dd>Added new automated test methods in Kotlin and Swift, used EarlGrey for UI and integration tests, and used Bazel for build and test workflows. Used SDK knowledge to separate product defects from infrastructure issues.</dd>
+<dt>Result</dt><dd class="result">Found and fixed many device API issues, and resolved several infrastructure problems along the way.</dd>
+</dl>
+</article>
+
+<article class="case">
+<h3>Test results dashboard</h3>
+<p class="tools">SQL, MySQL</p>
+<dl>
+<dt>Problem</dt><dd>Test progress was reported by hand, and clients could not easily see coverage, pass rate or why tests failed.</dd>
+<dt>My role</dt><dd>Designed and built the dashboard end to end.</dd>
+<dt>Approach</dt><dd>Wrote SQL queries, joins and views to show total, automated and blocked test counts, execution trends over time, and the overall pass rate. Added failure reasons next to each failing test.</dd>
+<dt>Result</dt><dd class="result">Clients can now see coverage and pass rate on their own, and the team triages failing tests faster.</dd>
+</dl>
+</article>
+</section>
+
+<section id="leadership">
+<h2>Leadership</h2>
+<ul class="plain">
+<li>Managed and mentored a team of 4+, including task allocation, feedback and weekly progress updates to stakeholders.</li>
+<li>Ran training sessions for junior engineers and helped onboard new team members.</li>
+<li>Took part in hiring by screening candidates and giving feedback on profiles.</li>
+<li>Worked with cross-functional teams in Agile, spotting risks early.</li>
+</ul>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Testing</h3><p>Automation, functional, regression and E2E testing, API and UI testing, test case design, root cause analysis, STLC</p></div>
+<div><h3>AI and agents</h3><p>LLM evaluation, AI response validation, prompt engineering, function and tool calling, agent loops, Model Context Protocol, agent failure-mode testing</p></div>
+<div><h3>Code and data</h3><p>Python, Java, C, Kotlin and Swift (test code), SQL and MySQL</p></div>
+<div><h3>Web and tools</h3><p>HTML, CSS, Bootstrap, JavaScript, React.js, AWS, Bazel, Agile and Scrum</p></div>
+</div>
+</section>
+
+<section id="learning">
+<h2>Learning and side projects</h2>
+<ul class="plain">
+<li><strong>Agentic AI course</strong>, in progress since August 2026, covering function calling, tool design and agent workflows.</li>
+<li><strong>Guess My Number:</strong> a React.js game where players get 5 attempts to find a generated number.</li>
+<li><strong>E-commerce website:</strong> a product catalog with a working shopping cart.</li>
+<li><strong>Front-end websites:</strong> responsive sites built with HTML, CSS, Bootstrap and JavaScript.</li>
+</ul>
+<div class="edu" style="margin-top:28px">
+<p><strong>B.Tech, Computer Science Engineering</strong>, Srinivasa Ramanujan Institute of Technology, 2019 to 2023. CGPA 8.87.</p>
+<p><strong>Certifications:</strong> AWS Certified Cloud Practitioner, Programming with Python, Basics of SQL.</p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p class="lead">I'm looking for an Automation Engineer or AI/Agentic AI Testing role.</p>
+<p><a href="mailto:kollamoramvineetha@gmail.com">Email</a><a href="https://www.linkedin.com/in/vineetha-kollamoram/">LinkedIn</a><a href="https://github.com/kollamoramvineetha">GitHub</a></p>
+</section>
+
+<footer>Kollamaram Vineetha</footer>
+</div>
+</body>
+</html>
